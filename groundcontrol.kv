@@ -545,15 +545,18 @@
     size: root.size
     pos: root.pos
     GridLayout:
-        cols: 2
+        cols: 3
         size_hint_y:.25
         TextInput:
-            size_hint_x:.8
+            size_hint_x:.75
             font_size: self.height - 5
             id:textInput
             disabled: True
         Button:
-            size_hint_x: .2
+            text: "Backspace"
+            size_hint_x: .125
+        Button:
+            size_hint_x: .125
             text: 'MM'
             id: unitsBtn
             on_release: root.switchUnits()
